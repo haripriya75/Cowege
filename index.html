@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
     <div id="nonlanding">
         <header>
@@ -72,30 +71,23 @@
             <div class="inputs">
                 <form action="">
                     <div class="input">
-                        <input type="text" placeholder="Full Name">
+                        <input type="text" id="signupNAME" placeholder="Full Name">
                     </div>
                     <div class="input">
-                        <input type="email" name="" id="" placeholder="Email id">
-
-                    </div>
-
-
-                    <div class="input">
-                        <input type="password" name="" id="" placeholder="Password">
-
+                        <input type="email" id="signupEMAIL" placeholder="Email id">
                     </div>
                     <div class="input">
-                        <input type="password" name="" id="" placeholder="Re-type Password">
-
+                        <input type="password" id="signupPASSWORD" placeholder="Password">
                     </div>
+
                 </form>
             </div>
             <div class="google">
                 <!-- <a href="https://www.freepnglogos.com/pics/google-logo" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-logos-vector-eps-cdr-svg-download-10.png" width="200" alt="google logo png google logos vector eps cdr svg download" /></a> -->
-                <button>REGISTER</button>
+                <button onclick="registerUser()">REGISTER</button>
             </div>
             <p>or</p>
-            <button type="button" class="login-with-google-btn" onclick="location.href = 'form.html';">Sign Up with Google</button>
+            <button type="button" class="login-with-google-btn" onclick="googleLogin()">Sign Up with Google</button>
 
         </div>
 
@@ -113,13 +105,13 @@
                 <form action="">
 
                     <div class="input">
-                        <input type="email" name="" id="" placeholder="Email id">
+                        <input type="email" id="loginEMAIL" placeholder="Email id">
 
                     </div>
 
 
                     <div class="input">
-                        <input type="password" name="" id="" placeholder="Password">
+                        <input type="password" id="loginPASSWORD" placeholder="Password">
 
                     </div>
 
@@ -127,7 +119,7 @@
             </div>
             <div class="l-google">
                 <!-- <a href="https://www.freepnglogos.com/pics/google-logo" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-logos-vector-eps-cdr-svg-download-10.png" width="200" alt="google logo png google logos vector eps cdr svg download" /></a> -->
-                <button>LOG IN</button>
+                <button onclick="loginUser()">LOG IN</button>
             </div>
             <p>or</p>
             <button type="button" class="login-with-google-btn" onclick="location.href = 'form.html';">Sign in with Google</button>
@@ -184,5 +176,6 @@
         }
     </script>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js"></script>
 </html>
