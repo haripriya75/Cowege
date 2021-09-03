@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="form" id="form">
+        <div class="data">
+            <h1>Data collection</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum distinctio explicabo nihil? Dolor, ab sint eveniet corrupti ullam repudiandae qui? Necessitatibus exercitationem quia, similique debitis tempora non numquam! Quia, possimus.</p>
+        </div>
+
+        <form id="F_form" action="/action_page.php">
+            <div class="dose1 bleh">
+                <h1>DOSE 1</h1>
+
+
+                <span class="radio__input">
+                <input type="radio" name="dose1" id="yes" required>
+                <span class="radio__control"></span>
+                <label for="yes">yes</label>
+                </span>
+                <!-- ---- --><br>
+                <span class="radio__input">
+                <input type="radio" name="dose1" id="no">
+                <span class="radio__control"></span>
+                <label for="no">no</label>
+
+                </span>
+            </div>
+            <div class="upload1 bleh">
+                <h1>Upload vaccination dose 1 certificate</h1>
+                <label for="file-upload" class="custom-file-upload">
+                   Choose Files
+                </label>
+
+                <input id="file-upload" type="file" required>
+
+            </div>
+            <div class="dose2 bleh">
+                <h1> DOSE 2</h1>
+
+
+                <span class="radio__input">
+                <input type="radio" name="dose1" id="yes" required>
+                <span class="radio__control"></span>
+                <label for="yes">yes</label>
+                </span>
+                <!-- ---- --><br>
+
+                <span class="radio__input">
+                <input type="radio" name="dose1" id="no">
+                <span class="radio__control"></span>
+                <label for="no">no</label>
+                </span>
+            </div>
+            <!-- <div class="upload2 bleh">
+                <h1>Upload vaccination dose 2 certificate</h1>
+                <label for="file-upload" class="custom-file-upload">
+                   Choose Files
+                </label>
+
+
+                <input id="file-upload" type="file" required>
+
+            </div> -->
+            <div class="covid bleh">
+                <h1> Infected with Corona Virus</h1>
+
+                <span class="radio__input">
+                <input type="radio" name="corona" id="yes" required>
+                <span class="radio__control"></span>
+                <label for="yes">yes</label>
+                </span>
+                <!-- ---- --><br>
+
+                <span class="radio__input">
+                <input type="radio" name="corona" id="no">
+                <span class="radio__control"></span>
+                <label for="no">no</label>
+                </span>
+                <!-- ---- --><br>
+
+                <span class="radio__input">
+                <input type="radio" name="corona" id="no">
+                <span class="radio__control"></span>
+                <label for="no">Currently</label>
+                </span>
+            </div>
+            <div class="submit">
+                <input type="submit">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

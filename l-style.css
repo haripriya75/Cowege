@@ -1,0 +1,142 @@
+* {
+    font-family: "lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    --bg: #F8FAFB;
+    --color-navbar: #6C63FF;
+    --color-headings: #3F3D56;
+    --color-text: #534e50;
+    --color-btn: #6C63FF;
+    --bgcolor-btn: #D3D0FF;
+    --color-btn-hover: #f1fafd;
+    --bgcolor-btn-hover: #6C63FF;
+    --bgcolor-form: #C4C1FF;
+    --bgcolor-google-btn: #6C63FF;
+    --color-google-btn: #fdf1f1;
+    --bgcolor-graphs: #f5f4f4;
+}
+
+html[data-theme="dark"] {
+    scroll-behavior: smooth;
+    --bg: #1B1929;
+    --color-navbar: hsl(349, 75%, 40%);
+    --color-headings: hsl(240, 1%, 83%);
+    --color-text: hsl(0, 4%, 76%);
+    --color-btn: #f1fafd;
+    --bgcolor-btn: hsl(349, 75%, 51%);
+    --color-btn-hover: hsl(349, 75%, 51%);
+    --bgcolor-btn-hover: #fdf1f1;
+    --bgcolor-form: #F5A8BA;
+    --bgcolor-google-btn: hsl(349, 75%, 51%);
+    --color-google-btn: #fdf1f1;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+header {
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 25px 60px;
+    z-index: 4567;
+    background-color: var(--bg);
+}
+
+header .logo {
+    font-weight: 700;
+    color: var(--color-navbar);
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+select {
+    text-transform: uppercase;
+    width: 200px;
+    height: 35px;
+    font-weight: 700;
+    border: 0;
+    background-color: transparent;
+    color: var(--color-navbar);
+    font-size: 23px;
+    letter-spacing: 4px;
+    transition: 0.2s;
+}
+
+select:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--color-navbar);
+}
+
+#colleges option {
+    background-color: rgb(244, 242, 247);
+    border: 0;
+    color: var(--color-navbar);
+}
+
+.students,
+.professors,
+.total {
+    margin-top: 5em;
+}
+
+.students h1,
+.professors h1,
+.total h1 {
+    color: var(--color-headings);
+    text-align: center;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1em;
+    margin: 1em;
+}
+
+#stu1,
+#stu2,
+#stu3,
+#prof1,
+#prof2,
+#prof3 {
+    width: 28vw;
+    background-color: var(--bgcolor-graphs);
+    border-radius: 10px;
+    padding: 1em;
+}
+
+#total1,
+#total2,
+#total3 {
+    width: 25vw;
+    background-color: var(--bgcolor-graphs);
+    border-radius: 10px;
+    padding: 1em;
+}

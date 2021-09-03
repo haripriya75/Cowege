@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVEGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id="nonlanding">
+        <header>
+            <div class="r_nav">
+                <a href="index.html" class="logo">COVEGE</a>
+            </div>
+        </header>
+    </div>
+    <div id="landing">
+        <!-- This section is for the Navbar: START -->
+        <header>
+            <div class="r_nav">
+                <a href="index.html" class="logo">COVEGE</a>
+                <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+            </div>
+
+            <ul>
+
+                <li><a href="#login-page" id="login" onclick="hari_login()">login</a></li>
+                <li>
+                    <a href="#signup" id="nav-btn" onclick="hari()">get started</a>
+                </li>
+            </ul>
+        </header>
+        <!-- This section is for the Navbar: END -->
+        <!-- This section is for the About: START -->
+        <div class="about">
+            <div class="text">
+                <h1>
+                    “Data is a precious thing and will last longer than the systems themselves"</h1>
+                <p>Covege is a collective initiative to bring back the normal. Covege helps u get the vaccination status of everyone involved in an institution (students and professors) and easy and safe campus visit</p>
+                <div class="btn">
+                    <a href="#signup" onclick="hari()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Get started
+                    </a>
+                </div>
+            </div>
+            <div class="animation">
+                <img src="images/dark.svg" id="img1" alt="">
+                <img src="images/bleh.svg" id="img2" alt="">
+            </div>
+        </div>
+        <!-- This section is for the About: END -->
+    </div>
+
+    <!-- This section is for the Registration form: START -->
+    <div id="signup" class="signup" style="overflow: hidden;">
+        <div class="sign_img">
+            <img src="images/light-sign.svg" id="l-img" alt="">
+            <img src="images/dark-sign.svg" id="d-img" alt="">
+        </div>
+        <div class="sign_form">
+            <h1>Sign Up</h1>
+            <div class="inputs">
+                <form action="">
+                    <div class="input">
+                        <input type="text" placeholder="Full Name">
+                    </div>
+                    <div class="input">
+                        <input type="email" name="" id="" placeholder="Email id">
+
+                    </div>
+
+
+                    <div class="input">
+                        <input type="password" name="" id="" placeholder="Password">
+
+                    </div>
+                    <div class="input">
+                        <input type="password" name="" id="" placeholder="Re-type Password">
+
+                    </div>
+                </form>
+            </div>
+            <div class="google">
+                <!-- <a href="https://www.freepnglogos.com/pics/google-logo" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-logos-vector-eps-cdr-svg-download-10.png" width="200" alt="google logo png google logos vector eps cdr svg download" /></a> -->
+                <button>REGISTER</button>
+            </div>
+            <p>or</p>
+            <button type="button" class="login-with-google-btn" onclick="location.href = '/api/auth/google-login';">Sign Up with Google</button>
+
+        </div>
+
+    </div>
+    <!-- This section is for the Registration form: END -->
+    <!-- This section is for the Log-in form: START -->
+    <div id="login-page" class="login" style="overflow: hidden;">
+        <div class="log_img">
+            <img src="images/l-login.svg" id="l-login" alt="">
+            <img src="images/d-login.svg" id="d-login" alt="">
+        </div>
+        <div class="log_form">
+            <h1>Log In</h1>
+            <div class="inputs">
+                <form action="">
+
+                    <div class="input">
+                        <input type="email" name="" id="" placeholder="Email id">
+
+                    </div>
+
+
+                    <div class="input">
+                        <input type="password" name="" id="" placeholder="Password">
+
+                    </div>
+
+                </form>
+            </div>
+            <div class="l-google">
+                <!-- <a href="https://www.freepnglogos.com/pics/google-logo" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-logos-vector-eps-cdr-svg-download-10.png" width="200" alt="google logo png google logos vector eps cdr svg download" /></a> -->
+                <button>LOG IN</button>
+            </div>
+            <p>or</p>
+            <button type="button" class="login-with-google-btn" onclick="location.href = '/api/auth/google-login';">Sign in with Google</button>
+        </div>
+
+
+    </div>
+    <!-- This section is for the Log-in form: END -->
+    <!-- ==============SCRIPT FILES=============== -->
+    <script>
+        var trans = () => {
+            document.documentElement.classList.add('transition');
+            window.setTimeout(() => {
+                document.documentElement.classList.remove('transition');
+
+            }, 1000)
+        }
+        var checkbox = document.getElementById('switch');
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                trans();
+                document.documentElement.setAttribute('data-theme', 'dark')
+                document.getElementById('img1').style.display = "block";
+                document.getElementById('img2').style.display = "none";
+                document.getElementById('d-img').style.display = "block";
+                document.getElementById('l-img').style.display = "none";
+                document.getElementById('d-login').style.display = "block";
+                document.getElementById('l-login').style.display = "none";
+
+            } else {
+                trans();
+                document.documentElement.setAttribute('data-theme', 'light')
+                document.getElementById('img2').style.display = "block";
+                document.getElementById('img1').style.display = "none";
+                document.getElementById('l-img').style.display = "block";
+                document.getElementById('d-img').style.display = "none";
+                document.getElementById('l-login').style.display = "block";
+                document.getElementById('d-login').style.display = "none";
+
+            }
+        })
+
+        function hari() {
+            document.getElementById("landing").style.display = "none";
+            document.getElementById("signup").style.display = "flex";
+            document.getElementById("nonlanding").style.display = "flex";
+        }
+
+        function hari_login() {
+            document.getElementById("landing").style.display = "none";
+            document.getElementById("login-page").style.display = "flex";
+            document.getElementById("nonlanding").style.display = "flex";
+
+        }
+    </script>
+</body>
+
+</html>
