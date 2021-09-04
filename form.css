@@ -7,8 +7,7 @@
             box-sizing: border-box;
             flex-wrap: wrap;
         }
-        
-        html {
+        /* html {
             scroll-behavior: smooth;
             --bg: #F8FAFB;
             --color-navbar: #6C63FF;
@@ -28,8 +27,8 @@
             scroll-behavior: smooth;
             --bg: #1B1929;
             --color-navbar: hsl(349, 75%, 40%);
-            --color-headings: hsl(240, 1%, 83%);
-            --color-text: hsl(0, 4%, 76%);
+            --color-headings: #3F3D56;
+            --color-text: #534e50;
             --color-btn: #f1fafd;
             --bgcolor-btn: hsl(349, 75%, 51%);
             --color-btn-hover: hsl(349, 75%, 51%);
@@ -37,18 +36,18 @@
             --bgcolor-form: #F5A8BA;
             --bgcolor-google-btn: hsl(349, 75%, 51%);
             --color-google-btn: #fdf1f1;
-            --form: #28273F;
-        }
+            --form: #F5A8BA;
+        } */
         
         body {
-            background-color: var(--bg);
+            background-color: #1B1929;
         }
         
         .form {
-            background-color: var(--form);
+            background-color: rgb(27, 27, 48);
             border-radius: 10px;
             width: 45em;
-            height: 55em;
+            height: 52em;
             margin: 3.5em auto;
             padding: 1em;
         }
@@ -59,7 +58,8 @@
             margin: 1em;
             font-size: 20px;
             margin-bottom: 0 !important;
-            color: var(--color-text);
+            color: #dbd8d8;
+            padding-bottom: 0 !important;
         }
         
         .form .data h1 {
@@ -67,7 +67,7 @@
             padding: 10px;
             margin: 10px;
             padding-left: 29px;
-            color: var(--color-headings);
+            color: #dbd8d8;
         }
         
         .form form {
@@ -79,19 +79,20 @@
         #F_form h1 {
             font-weight: 500;
             font-size: 25px;
-            padding: 0;
-            color: var(--color-text);
+            color: #dbd8d8;
+            /* border: 2px solid pink; */
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
         
         #F_form label {
-            font-size: 15px;
+            font-size: 20px;
             text-transform: uppercase;
-            /* border: springgreen 2px solid; */
-            padding: 5px;
+            padding: 10px;
         }
         
         .bleh {
-            background-color: var(--bg);
+            background-color: #101825;
             border-radius: 8px;
             padding: 1em;
             margin: 1em;
@@ -103,17 +104,19 @@
         
         .custom-file-upload {
             border: 1.5px solid gray;
-            background-color: #fdfdfd;
+            background-color: #ffffff;
             display: inline-block;
             padding: 10px 12px;
             cursor: pointer;
             margin: 10px 0;
             border-radius: 5px;
             color: black;
+            height: 2em;
+            width: 9em;
         }
         
         label {
-            color: var(--color-text);
+            color: #fafafa;
         }
         
         .custom-file-upload:hover,
@@ -130,8 +133,8 @@
         
         input[type=submit] {
             border: none;
-            background-color: var(--bgcolor-google-btn);
-            color: var(--color-google-btn);
+            background-color: #fafafa;
+            color: black;
             height: 2em;
             width: 9em;
             align-self: center;

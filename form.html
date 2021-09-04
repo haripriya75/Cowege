@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme='dark'>
 
 <head>
     <meta charset="UTF-8">
@@ -13,45 +13,28 @@
     <div class="form" id="form">
         <div class="data">
             <h1>Data collection</h1>
-            <p>content</p>
+            <p>Kindly add *true details about your vaccination as well as covid status.(In the below form partially vaccinated stands for dose1 vaccination, fully vaccinated stands for dose1 along with dose2 vaccination and not vaccinated means you aren't
+                diagnosed with vaccine yet.)</p>
         </div>
 
         <form id="F_form" action="/action_page.php">
-            <div class="dose1 bleh">
+            <div class="vaccine bleh">
                 <h1>VACCINATION STATUS</h1>
-                <input type="radio" name="dose1" id="yes" required>
-                <label for="yes">DOSE1</label>
+                <input type="radio" name="vaccine" id="dose1" required>
+                <label for="PARTIALLY VACCINATED">PARTIALLY VACCINATED</label>
                 <!-- ---- --><br>
-                <input type="radio" name="dose1" id="no">
-                <label for="no">no</label>
-
-            </div>
-            <div class="upload1 bleh">
-                <h1>Upload vaccination dose 1 certificate</h1>
-                <label for="file-upload" class="custom-file-upload">
-                   Choose Files
-                </label>
-
-                <input id="file-upload" type="file" required>
-
-            </div>
-            <div class="dose2 bleh">
-                <h1> DOSE 2</h1>
-
-
-
-                <input type="radio" name="dose2" id="yes" required>
-
-                <label for="yes">yes</label>
+                <input type="radio" name="vaccine" id2="dose2">
+                <label for="FULLY VACCINATED">FULLY VACCINATED</label>
                 <!-- ---- --><br>
+                <input type="radio" name="vaccine" id="dose2">
+                <label for="NOT VACCINATED">NOT VACCINATED</label>
 
 
-                <input type="radio" name="dose2" id="no">
-
-                <label for="no">no</label>
             </div>
-            <!-- <div class="upload2 bleh">
-                <h1>Upload vaccination dose 2 certificate</h1>
+
+
+            <div class="upload bleh">
+                <h1>Upload vaccination certificate</h1>
                 <label for="file-upload" class="custom-file-upload">
                    Choose Files
                 </label>
@@ -59,26 +42,16 @@
 
                 <input id="file-upload" type="file" required>
 
-            </div> -->
+            </div>
             <div class="covid bleh">
-                <h1> Infected with Corona Virus</h1>
+                <h1> COVID-19 STATUS</h1>
 
 
-                <input type="radio" name="corona" id="yes" required>
-
-                <label for="yes">yes</label>
+                <input type="radio" name="covid" id="dose1" required>
+                <label for="INFECTED">INFECTED</label>
                 <!-- ---- --><br>
-
-
-                <input type="radio" name="corona" id="no">
-
-                <label for="no">no</label>
-                <!-- ---- --><br>
-
-
-                <input type="radio" name="corona" id="no">
-
-                <label for="no">Currently</label>
+                <input type="radio" name="covid" id="dose2">
+                <label for="NON-INFECTED">NON-INFECTED</label>
             </div>
             <div class="submit">
                 <input type="submit">

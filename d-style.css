@@ -109,19 +109,19 @@ select:hover {
 #stu1,
 #stu2,
 #stu3,
-#prof1,
-#prof2,
-#prof3 {
-    width: 28vw;
+#total1,
+#total2,
+#total3 {
+    width: 45vw;
     background-color: var(--bgcolor-graphs);
     border-radius: 10px;
     padding: 1em;
 }
 
-#total1,
-#total2,
-#total3 {
-    width: 25vw;
+#prof1,
+#prof2,
+#prof3 {
+    width: 35vw;
     background-color: var(--bgcolor-graphs);
     border-radius: 10px;
     padding: 1em;
