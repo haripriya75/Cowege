@@ -30,6 +30,7 @@ function loginUser() {
             //     }
             // })
             console.log(JSON.stringify(response.data));
+            location.replace('/l-dashboard.html');
         })
         .catch(function(error) {
             console.log(error);
@@ -56,7 +57,7 @@ function registerUser() {
     axios(config)
         .then(function(response) {
             console.log(JSON.stringify(response.data));
-            window.location.replace('/form.html')
+            location.replace('/form.html')
         })
         .catch(function(error) {
             console.log(error);
@@ -66,5 +67,5 @@ function registerUser() {
 }
 
 function googleLogin() {
-    location.replace("https://covege.herokuapp.com/api/auth/google-login")
+    location.replace("api/auth/google-login");
 }
