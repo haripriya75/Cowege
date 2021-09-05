@@ -33,8 +33,8 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    background: url("https://images.unsplash.com/photo-1451186859696-371d9477be93?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925") no-repeat 0 0;
-    filter: blur(80px);
+    background-color: #1B1929;
+    /* filter: blur(80px); */
     transform: scale(1.2);
 }
 
@@ -48,17 +48,18 @@ Chat
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 800px;
-    height: 50vh;
+    width: 80vw;
+    height: 80vh;
     max-height: 500px;
     z-index: 2;
     overflow: hidden;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
-    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 30px #101825;
+    background: rgb(27, 27, 48);
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    border: 2px gray;
 }
 
 
@@ -70,25 +71,26 @@ Chat Title
     flex: 0 1 45px;
     position: relative;
     z-index: 2;
-    background: rgba(0, 0, 0, 0.2);
+    background: #101825;
     color: #fff;
     text-transform: uppercase;
     text-align: left;
     padding: 10px 10px 10px 50px;
 }
 
-.chat-title h1,
-.chat-title h2 {
+.chat-title h1 {
     font-weight: normal;
-    font-size: 10px;
-    margin: 0;
+    font-size: 15px;
+    margin: 4.9px !important;
     padding: 0;
 }
 
 .chat-title h2 {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 8px;
+    color: rgba(255, 254, 254, 0.849);
+    font-size: 12px;
     letter-spacing: 1px;
+    /* border: 2px solid pink; */
+    margin: 5px !important;
 }
 
 .chat-title .avatar {
@@ -117,7 +119,7 @@ Messages
 
 .messages {
     flex: 1 1 auto;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.856);
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -139,11 +141,11 @@ Messages
     border-radius: 10px 10px 10px 0;
     background: rgba(0, 0, 0, 0.3);
     margin: 8px 0;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.4;
     margin-left: 35px;
     position: relative;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 1px #101825;
 }
 
 .messages .message .timestamp {
@@ -185,7 +187,7 @@ Messages
     float: right;
     color: #fff;
     text-align: right;
-    background: linear-gradient(120deg, #248A52, #257287);
+    background: linear-gradient(120deg, #242e8a, #1e4c58);
     border-radius: 10px 10px 0 10px;
 }
 
@@ -295,7 +297,7 @@ Message Box
     resize: none;
     color: rgba(255, 255, 255, 0.7);
     font-size: 11px;
-    height: 17px;
+    height: 20px;
     margin: 0;
     padding-right: 20px;
     width: 265px;
@@ -312,8 +314,8 @@ Message Box
     right: 10px;
     color: #fff;
     border: none;
-    background: #248A52;
-    font-size: 10px;
+    background: #242e8a;
+    font-size: 13px;
     text-transform: uppercase;
     line-height: 1;
     padding: 6px 10px;
