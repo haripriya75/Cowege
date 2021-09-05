@@ -38,6 +38,58 @@ body {
     transform: scale(1.2);
 }
 
+#bot-header {
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 25px 60px;
+    background-color: #1B1929;
+    z-index: 456478;
+}
+
+#bot-header .logo-bot {
+    font-weight: 700;
+    color: hsl(349, 75%, 40%);
+    font-size: 2.4em;
+    letter-spacing: 2px;
+}
+
+#bot-header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bot-header ul li {
+    margin: 0 15px;
+}
+
+.logo-bot {
+    font-weight: 700;
+    color: hsl(349, 59%, 45%);
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+#dash {
+    padding: 10px 10px;
+    color: hsl(349, 75%, 40%);
+    font-size: 2em;
+    letter-spacing: 4px;
+    transition: 0.2s;
+}
+
+#dash:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px hsl(349, 75%, 40%);
+}
+
 
 /*--------------------
 Chat
