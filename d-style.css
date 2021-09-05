@@ -126,3 +126,16 @@ select:hover {
     border-radius: 10px;
     padding: 1em;
 }
+
+#stu1 h1,
+#stu2 h1,
+#stu3 h1,
+#total1 h1,
+#total2 h1,
+#total3 h1,
+#prof1 h1,
+#prof2 h1,
+#prof3 h1 {
+    font-weight: 500;
+    font-size: 20px;
+}
