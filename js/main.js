@@ -19,18 +19,8 @@ function loginUser() {
 
     axios(config)
         .then(function(response) {
-            // var checkbox = document.getElementById('switch');
-            // console.log(checkbox)
-            // checkbox.addEventListener('change', function() {
-            //     if (this.checked) {
-            //         window.location.replace('/d-dashboard.html')
-            //     } else {
-            //         window.location.replace('/l-dashboard.html')
-
-            //     }
-            // })
             console.log(JSON.stringify(response.data));
-            location.replace('/l-dashboard.html');
+            location.replace('/d-dashboard.html');
         })
         .catch(function(error) {
             console.log(error);
@@ -68,4 +58,30 @@ function registerUser() {
 
 function googleLogin() {
     location.replace("api/auth/google-login");
+}
+
+function formSumit(){
+    var data = JSON.stringify({
+    "dose1": true,
+    "dose2": true,
+    "covidPositive": true
+    });
+
+    var config = {
+    method: 'post',
+    url: 'https://covege.herokuapp.com/api/vacine-form',
+    headers: { 
+        'Content-Type': 'application/json'
+    },
+    data : data
+    };
+
+    axios(config)
+    .then(function (response) {
+    console.log(JSON.stringify(response.data));
+    })
+    .catch(function (error) {
+    console.log(error);
+    });
+    location.replace('/d-dashboard.html')
 }
