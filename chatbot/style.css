@@ -1,9 +1,12 @@
 /*--------------------
 Mixins
 --------------------*/
+
+
 /*--------------------
 Body
 --------------------*/
+
 *,
 *::before,
 *::after {
@@ -30,20 +33,22 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    /*background: url("https://images.unsplash.com/photo-1451186859696-371d9477be93?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925") no-repeat 0 0;*/
+    background: url("https://images.unsplash.com/photo-1451186859696-371d9477be93?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925") no-repeat 0 0;
     filter: blur(80px);
     transform: scale(1.2);
 }
 
+
 /*--------------------
 Chat
 --------------------*/
+
 .chat {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
+    width: 800px;
     height: 50vh;
     max-height: 500px;
     z-index: 2;
@@ -56,9 +61,11 @@ Chat
     flex-direction: column;
 }
 
+
 /*--------------------
 Chat Title
 --------------------*/
+
 .chat-title {
     flex: 0 1 45px;
     position: relative;
@@ -70,7 +77,8 @@ Chat Title
     padding: 10px 10px 10px 50px;
 }
 
-.chat-title h1, .chat-title h2 {
+.chat-title h1,
+.chat-title h2 {
     font-weight: normal;
     font-size: 10px;
     margin: 0;
@@ -102,9 +110,11 @@ Chat Title
     height: auto;
 }
 
+
 /*--------------------
 Messages
 --------------------*/
+
 .messages {
     flex: 1 1 auto;
     color: rgba(255, 255, 255, 0.5);
@@ -265,9 +275,11 @@ Messages
     animation-delay: 0.3s;
 }
 
+
 /*--------------------
 Message Box
 --------------------*/
+
 .message-box {
     flex: 0 1 40px;
     width: 100%;
@@ -314,15 +326,17 @@ Message Box
     background: #1D7745;
 }
 
+
 /*--------------------
 Custom Srollbar
 --------------------*/
+
 .mCSB_scrollTools {
     margin: 1px -3px 1px 0;
     opacity: 0;
 }
 
-.mCSB_inside > .mCSB_container {
+.mCSB_inside>.mCSB_container {
     margin-right: 0px;
     padding: 0 10px;
 }
@@ -331,9 +345,11 @@ Custom Srollbar
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
+
 /*--------------------
 Bounce
 --------------------*/
+
 @-webkit-keyframes bounce {
     0% {
         transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
