@@ -108,14 +108,19 @@
             display: inline-block;
             padding: 10px 10px;
             cursor: pointer;
-            padding-top: 3px !important;
+            padding-top: 0.5px !important;
             border-radius: 5px;
             color: black;
-            height: 2em;
+            height: 1.5em;
             width: 8em;
         }
         
         label {
+            color: #fafafa;
+        }
+        
+        .custom-file-upload:active {
+            background-color: rgb(187, 186, 186);
             color: #fafafa;
         }
         
